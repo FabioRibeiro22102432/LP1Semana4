@@ -4,19 +4,11 @@ namespace MyFirstMethod
 {
     class Program
     {
-        static void Main(string[] args)
-        {
 
-            CountTo10();
-            CountTo10();
-
-            CountToN(8);
-            CountToN(10);
-
-            /// <summary>
+        /// <summary>
             /// Contagem crescente de 1 a 10
             /// </summary>
-            static void CountTo10()
+            private static void CountTo10()
             {
                 for(int i = 1; i<=10; i++ )
                 {
@@ -34,13 +26,14 @@ namespace MyFirstMethod
                     Console.WriteLine(i);
 
                 }
+            }
 
             /// <summary>
             /// Recebe dois numeros e faz contagem crescente
             /// </summary>
             /// <param name="n1">valor inicial</param>
             /// <param name="n2">valor final</param>
-            static void NtoN(int n1, int n2)
+            private static void NtoN(int n1, int n2)
             {
                 int i;
                 for(i = n1; i<=n2; i++)
@@ -49,10 +42,20 @@ namespace MyFirstMethod
                 }
 
             }
+        private static void Main(string[] args)
+        {
+
+            CountTo10();
+            CountTo10();
+
+            CountToN(8);
+            CountToN(10);
+
+            
+           
             NtoN(2,3);
 
             }
 
-        }
     }
 }
